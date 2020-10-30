@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/019b894f54.js" crossorigin="anonymous"></script>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style/reset.css">
     <link rel="stylesheet" href="style/style.css">
@@ -12,15 +13,15 @@
     <header id="header">
         <nav id="menu">
             <a href="index.html">Home</a>
-            <a href="works.html">Munkáim</a>
-            <a href="gallery.html">Galéria</a>
-            <a href="about.html">Rólam</a>
+            <a href="works.html">Works</a>
+            <a href="gallery.html">Gallery</a>
+            <a href="about.html">About</a>
         </nav>
-        <h1>Bemutatkozás</h1>
+        <h1 id="pageTitle">Bemutatkozás</h1>
     </header>
     <main id="main">
-    <section>
-        <article class="content">
+    <section class="content">
+        <article id="persinfo">
             <div class="image-wrapper">
                 <img src="/images/én.jpg" alt="Én vagyok">
                 <img src="/images/ketten.jpg" alt="Párommal">
@@ -38,14 +39,36 @@
             </p>
         </article>
     </section>
+    <section class="content">
+        <article id="goodProps">
+            <div class="boxwrapper">
+                <div id="trust">
+                    <h2>Megbizható</h2>
+                    <p>Amit elvállalok, azt meg is oldom</p>
+                </div>
+                <div id="creative">
+                    <h2>Kreativ</h2>
+                    <p>Szeretek újdonságokat kipróbálni, kisérletezni</p>
+                </div>
+                <div id="precise">
+                    <h2>Preciz</h2>
+                    <p>Igyekszem mindig pontosan, és az igényeknek megelelően elvégezni a kért munkát</p>
+                </div>
+            </div>
+        </article>
+    </section>
     </main>
     <footer id="footer">
         <nav id="footermenu">
             <a href="index.html">Home</a>
-            <a href="works.html">Munkáim</a>
-            <a href="gallery.html">Galéria</a>
-            <a href="about.html">Rólam</a>
+            <a href="works.html">Works</a>
+            <a href="gallery.html">Gallery</a>
+            <a href="about.html">About</a>
+            
         </nav>
+        <span id="upArrow">
+           <a href="#pageTitle"><i class="fas fa-arrow-up"></i></a> 
+        </span>
     </footer>
 </body>
 </html>

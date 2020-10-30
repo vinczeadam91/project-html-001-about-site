@@ -43,9 +43,10 @@ color: #fff;
     margin: 5px;
 }
 
-.content section{
+.content section:first{
     margin-top: 60px;
     padding: 10px;
+   
 }
 
 #header h1{
@@ -53,15 +54,61 @@ color: #fff;
     padding: 10px;
 }
 
-.content p{
+#persinfo p{
+    width: 98%;
     margin-top: 10px;
+    padding: 40px;
+    border: solid 1px #fff;
+    border-radius: 25px;
+    background-color: rgb(238, 234, 233);
+    color: #000;
+}
+
+.boxwrapper{
+    margin: 20px 0;
+}
+
+.boxwrapper div#trust,.boxwrapper div#precise,.boxwrapper div#creative{
+    display: inline-block;
+    width: 30%;
+    margin-left: 10px;
     padding: 10px;
+    border: 1px #ccc solid;
+    border-radius: 30px;
+    background-color: #ccc;
+    color: #000;
+    text-align: center;
+    box-shadow: 10px 10px 30px #000;
+}
+
+.boxwrapper div#trust h2, .boxwrapper div#precise h2, .boxwrapper div#creative h2{
+    color: #ff0000;
+    text-align: center;
 }
 
 footer nav{
+    font-size: .8rem;
     width: 100vw;
-    position: absolute;
+    position: relative;
     bottom: 0;
     left: 0;
     height: 60px;
 }
+
+footer nav a{
+    position: relative;
+    top: 25px;
+}
+
+#upArrow{
+    background-color: azure;
+    padding: 10px;
+    border: azure 1px solid;
+    border-radius: 50%;
+    position: relative;
+    top: 25px;
+    left: 50vw;
+    text-align: right;
+}
+
+
