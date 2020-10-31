@@ -1,3 +1,41 @@
+@media only screen and (max-width: 800px) {
+    header nav#menu{
+        width: 100vw;
+        text-align: center;
+        position: fixed;
+        top: 0;
+        left: 0;
+        height: 18vh;
+        font-size: 1.5rem;
+        padding: 0 10px;
+    }
+
+    header nav#menu a{
+      margin-left: 10px;  
+}
+
+.boxwrapper{
+    width: 90vw;
+}
+
+
+
+#goodProps .boxwrapper div#trust,#goodProps .boxwrapper div#precise,#goodProps .boxwrapper div#creative{
+   display: block;
+    width: 100vw;
+    margin-top: 10px;
+    padding: 10px;
+    border: 1px #ccc solid;
+    border-radius: 30px;
+    background-color: #ccc;
+    color: #000;
+    text-align: center;
+    box-shadow: 10px 10px 30px #000;
+}
+
+}
+
+
 body {
     background-image: url("/images/bg.jpg");
     box-sizing: border-box;
@@ -30,8 +68,17 @@ nav a{
 position: relative;
 top: 15px;
 margin: 15px;
+padding: 10px;
+border: 1px solid #3f3e3e;
+border-radius: 10px;
 text-decoration: none;
+background-color: #3f3e3e;
 color: #fff;
+}
+
+nav a:hover{
+    
+    background-color: #ff0000;
 }
 
 .image-wrapper{
@@ -68,7 +115,10 @@ color: #fff;
     margin: 20px 0;
 }
 
+
+
 .boxwrapper div#trust,.boxwrapper div#precise,.boxwrapper div#creative{
+    
     display: inline-block;
     width: 30%;
     margin-left: 10px;
