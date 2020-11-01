@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="hu">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,6 +10,7 @@
     <link rel="stylesheet" href="style/style.css">
     <title>About</title>
 </head>
+
 <body>
     <header id="header">
         <nav id="menu">
@@ -17,47 +19,53 @@
             <a href="gallery.html">Gallery</a>
             <a href="about.html">About</a>
         </nav>
+        <img id="biggerimg" src="/images/én.jpg" alt="Nagyobb kép rólam">
         <h1 id="pageTitle">Bővebb bemutatkozás</h1>
     </header>
     <main id="main">
-        <section class="content">
+        <section class="content about">
             <article id="tanulmanyok"></article>
-                <h2>Tanulmányok</h2>
-                <ul>
-                    <li>SZC Borbély Lajos Szakgimnáziuma, Szakközépiskolája..., Salgótarján<br>
-                        2007 - 2011, Informatika
-                        </li>
-                    <li>Ujratervezés Program<br>
-                        2020, Nemzeti Szakképzési és Felnőttképzési Hivatal
-                        </li>
-                    <li>Ethical Hacking<br>
-                        2019 - 2020, NetAcademia Oktatóközpont KFT
-                        </li>
-                </ul>
+            <h2>Tanulmányok</h2>
+            <ul>
+                <li>SZC Borbély Lajos Szakgimnáziuma, Szakközépiskolája..., Salgótarján
+                    2007 - 2011, Informatika
+                </li>
+                <li>Ujratervezés Program
+                    2020, Nemzeti Szakképzési és Felnőttképzési Hivatal
+                </li>
+                <li>Ethical Hacking
+                    2019 - 2020, NetAcademia Oktatóközpont KFT
+                </li>
+            </ul>
 
-                <h2>Szakmai Tapasztalatok</h2>
+            <h2>Szakmai Tapasztalatok</h2>
 
-                <h3>NetAcademia Oktatóközpont KFT</h3>
-                <ul>
-                    <li>Minőségbiztosítási feladatok ellátása online közvetítés és videós tanfolyamok esetén
+            <h3>NetAcademia Oktatóközpont KFT</h3>
+            <ul>
+                <li>Minőségbiztosítási feladatok ellátása online közvetítés és videós tanfolyamok esetén
 
-                    </li>
-                    <li>Felvételek szakszerű vágása, tökéletesítése
+                </li>
+                <li>Felvételek szakszerű vágása, tökéletesítése
 
-                    </li>
-                    <li>Ügyfélkezelési /Technikai support feladatok ellátása
+                </li>
+                <li>Ügyfélkezelési /Technikai support feladatok ellátása
 
-                    </li>
-                    <li>Oktatók technikai segítése, felkészítése a közvetítőrendszer használatára
+                </li>
+                <li>Oktatók technikai segítése, felkészítése a közvetítőrendszer használatára
 
-                    </li>
-                    
-                </ul>
+                </li>
 
-                <h3>Alfa Nonprofit Közhasznú KFT</h3>
-                <ul>
-                    <li>Online üzletkötő, adatrögzítő</li>
-                </ul>
+            </ul>
+
+            <h3>Alfa Nonprofit Közhasznú KFT</h3>
+            <ul>
+                <li>Online üzletkötő, adatrögzítő</li>
+            </ul>
+            <h3>Nyelvismeret</h3>
+            <ol>
+                <li>Magyar</li>
+                <li>Angol</li>
+            </ol>
         </section>
 
         <section class="content form">
@@ -67,7 +75,7 @@
                         <div class="inputContainer text">
                             <label for="name" id="name-label">
                                 <span>Name:</span>
-                                <input type="text" id="name" name="name" placeholder="Név" required><br>
+                                <input type="text" id="name" name="name" minlength="5" placeholder="Név" required><br>
                             </label>
                         </div>
                         <div class="inputContainer text">
@@ -75,21 +83,19 @@
                                 <span>Email:</span>
                                 <input type="email" id="email" name="email" placeholder="Email cim" required><br>
                             </label>
-                        </div> 
+                        </div>
                         <div class="inputContainer textarea">
 
-                            <textarea id="comment" name="comment" placeholder="Üzenet" rows="10" cols="100">
-        
-                         </textarea>
+                            <input type="text" id="comment" name="comment" placeholder="Üzenet" minlength="20">
                         </div>
-        
-                        
+
+
                         <div class="inputContainer submit">
                             <input type="submit" name="submit" id="submit" value="submit">
                         </div>
-        
-                        
-                        
+
+
+
                     </form>
                 </div>
             </article>
@@ -101,11 +107,12 @@
             <a href="works.html">Works</a>
             <a href="gallery.html">Gallery</a>
             <a href="about.html">About</a>
-            
+
         </nav>
         <span id="upArrow">
-           <a href="#pageTitle"><i class="fas fa-arrow-up"></i></a> 
+            <a href="#pageTitle"><i class="fas fa-arrow-up"></i></a>
         </span>
     </footer>
 </body>
+
 </html>

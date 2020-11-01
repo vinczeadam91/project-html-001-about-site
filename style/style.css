@@ -1,17 +1,14 @@
-@media only screen and (max-width: 800px) {
-    header nav#menu{
+@media only screen and (max-width: 960px) {
+    nav#menu{
         width: 100vw;
-        text-align: center;
-        position: fixed;
-        top: 0;
-        left: 0;
-        height: 18vh;
-        font-size: 1.5rem;
-        padding: 0 10px;
+        text-align: left;
+        font-size: 1.2rem;
+        padding: 0 5px;
     }
 
     header nav#menu a{
-      margin-left: 10px;  
+     padding: 5px; 
+     margin: 0 5px; 
 }
 
 .boxwrapper{
@@ -33,34 +30,56 @@
     box-shadow: 10px 10px 30px #000;
 }
 
-.projects{
+.munkaim .projects{
     width: 100%;
 }
 
-.projects.pictureWrapper{
+.munkaim .projects .pictureWrapper{
     display: block;
     width: 100%;
+    margin-top: 10px;
 }
 
-.projects.descWrapper{
+.munkaim .projects .pictureWrapper img{
     display: block;
     width: 100%;
+    
 }
 
+.munkaim .projects .descWrapper{
+    display: block;
+    width: 100%;
+    margin-top: 10px;
 }
 
+.gallery.content article .galleryWrapper .imgWrapper{
+    width: 100vw;
+    margin: 15px;
+    box-shadow: 10px 10px 40px #000;
+}
+
+.imgWrapper img{
+    width: 100vw;
+}
+
+.form #formContainer, .form #formContainer .inputContainer {
+width: 100vw;
+}
+}
 
 body {
     background-image: url("/images/bg.jpg");
     box-sizing: border-box;
     font-family: 'Roboto', sans-serif;
     font-size: 1.5rem;
+    line-height: 1.8rem;
     color: #000;
 }
 
 header nav#menu{
     width: 100vw;
     position: fixed;
+    z-index: 99;
     top: 0;
     left: 0;
     height: 60px;
@@ -68,9 +87,9 @@ header nav#menu{
     padding: 0 15px;
 }
 
-#header h1{
+ h1{
     margin-top: 40px;
-
+    font-size: 30px;
 }
 
 nav#menu{
@@ -96,6 +115,7 @@ nav a:hover{
 }
 
 .image-wrapper{
+    box-sizing: border-box;
     text-align: center;
 }
 
@@ -111,8 +131,13 @@ nav a:hover{
 }
 
 #header h1{
+    text-align: center;
     margin-top: 60px;
     padding: 10px;
+}
+
+#header h1.homeTitle{
+    text-align: left;
 }
 
 #persinfo p{
@@ -127,6 +152,7 @@ nav a:hover{
 
 .boxwrapper{
     margin: 20px 0;
+    box-sizing: border-box;
 }
 
 
@@ -143,11 +169,131 @@ nav a:hover{
     color: #000;
     text-align: center;
     box-shadow: 10px 10px 30px #000;
+    box-sizing: border-box;
 }
 
 .boxwrapper div#trust h2, .boxwrapper div#precise h2, .boxwrapper div#creative h2{
     color: #ff0000;
     text-align: center;
+}
+main .munkaim p{
+    margin-top: 10px;
+    text-align: center;
+}
+
+.projects{
+    width: 90%;
+    margin: 15px 0 10px 20px;
+    padding: 15px 15px;
+    background-color: cornsilk;
+    box-sizing: border-box;
+
+}
+
+.projects .pictureWrapper{
+    display: inline-block;
+    width: 30%;
+    vertical-align: middle;
+    box-sizing: border-box;
+}
+
+.projects .pictureWrapper img{
+    width: 200px;
+}
+
+.projects .descWrapper{
+    display: inline-block;
+    width: 30%;
+    text-align: center;
+    vertical-align: middle;
+    box-sizing: border-box;
+}
+
+.galleryWrapper .imgWrapper{
+    position: relative;
+    display: inline-block;
+    width: 30vw;
+    padding: 0 10px;
+    box-sizing: border-box;
+    
+}
+
+.galleryWrapper .imgWrapper img{
+    width: 100%;
+    
+}
+
+#biggerimg{
+    width: 400px;
+    position: relative;
+    top: 60px;
+}
+
+.about{
+    text-align: center;
+    background-color: burlywood;
+    padding: 15px;
+    margin-top: 20px;
+    line-height: 1.9rem;
+}
+
+
+.about h2, .about h3{
+    margin-top: 15px;
+    color: #fff;
+}
+
+
+
+#formContainer {
+    width: 60%;
+    height: auto;
+    margin: 10px auto;
+    background-color: rgb(27, 3, 34);
+    opacity: 0.9;
+    font-size: 1.5rem;
+}
+
+.inputContainer{
+    padding: 20px;
+    width: 90%;
+   
+}
+
+.inputContainer p {
+
+    text-indent: 10px;
+}
+
+.inputContainer.text, .inputContainer.text input {
+    font-size: inherit;
+    display: block;
+    width: 90%;
+    margin: 15px 10px;
+    padding: 10px 10px;
+}
+
+.inputContainer #comment {
+    text-align: left;
+    width: 90%;
+    height: 50px;
+    margin: auto 5px;
+}
+
+.inputContainer.submit {
+   margin: 0 auto;
+    text-align: center;
+    font-size: inherit;
+}
+
+.inputContainer.submit input {
+   display: block;
+   width: 90%;
+   background-color: #48d1cc;
+   color: #ffffff;
+   padding: 15px;
+   font-size: inherit;
+   
 }
 
 footer #footermenu{
@@ -168,7 +314,7 @@ footer #footermenu a{
 }
 
 #upArrow{
-    background-color: azure;
+    background-color: rgba(240, 255, 255, 0.349);
     padding: 10px;
     border: azure 1px solid;
     border-radius: 50%;
@@ -177,33 +323,5 @@ footer #footermenu a{
     left: 50vw;
 }
 
-main #munkaim p{
-    margin-top: 10px;
-}
-
-.projects{
-    width: 90%;
-    margin: 15px 0 10px 20px;
-    padding: 15px 15px;
-    background-color: cornsilk;
-
-}
-
-.projects .pictureWrapper{
-    display: inline-block;
-    width: 30%;
-    vertical-align: middle;
-}
-
-.projects .pictureWrapper img{
-    width: 200px;
-}
-
-.projects .descWrapper{
-    display: inline-block;
-    width: 30%;
-    text-align: center;
-    vertical-align: middle;
-}
 
 
