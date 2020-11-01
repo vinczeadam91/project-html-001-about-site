@@ -1,11 +1,111 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="hu">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <script src="https://kit.fontawesome.com/019b894f54.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style/reset.css">
+    <link rel="stylesheet" href="style/style.css">
+    <title>About</title>
 </head>
 <body>
-    
+    <header id="header">
+        <nav id="menu">
+            <a href="index.html">Home</a>
+            <a href="works.html">Works</a>
+            <a href="gallery.html">Gallery</a>
+            <a href="about.html">About</a>
+        </nav>
+        <h1 id="pageTitle">Bővebb bemutatkozás</h1>
+    </header>
+    <main id="main">
+        <section class="content">
+            <article id="tanulmanyok"></article>
+                <h2>Tanulmányok</h2>
+                <ul>
+                    <li>SZC Borbély Lajos Szakgimnáziuma, Szakközépiskolája..., Salgótarján<br>
+                        2007 - 2011, Informatika
+                        </li>
+                    <li>Ujratervezés Program<br>
+                        2020, Nemzeti Szakképzési és Felnőttképzési Hivatal
+                        </li>
+                    <li>Ethical Hacking<br>
+                        2019 - 2020, NetAcademia Oktatóközpont KFT
+                        </li>
+                </ul>
+
+                <h2>Szakmai Tapasztalatok</h2>
+
+                <h3>NetAcademia Oktatóközpont KFT</h3>
+                <ul>
+                    <li>Minőségbiztosítási feladatok ellátása online közvetítés és videós tanfolyamok esetén
+
+                    </li>
+                    <li>Felvételek szakszerű vágása, tökéletesítése
+
+                    </li>
+                    <li>Ügyfélkezelési /Technikai support feladatok ellátása
+
+                    </li>
+                    <li>Oktatók technikai segítése, felkészítése a közvetítőrendszer használatára
+
+                    </li>
+                    
+                </ul>
+
+                <h3>Alfa Nonprofit Közhasznú KFT</h3>
+                <ul>
+                    <li>Online üzletkötő, adatrögzítő</li>
+                </ul>
+        </section>
+
+        <section class="content form">
+            <article>
+                <div id="formContainer">
+                    <form action="#" id="contact-form">
+                        <div class="inputContainer text">
+                            <label for="name" id="name-label">
+                                <span>Name:</span>
+                                <input type="text" id="name" name="name" placeholder="Név" required><br>
+                            </label>
+                        </div>
+                        <div class="inputContainer text">
+                            <label for="email" id="email-label">
+                                <span>Email:</span>
+                                <input type="email" id="email" name="email" placeholder="Email cim" required><br>
+                            </label>
+                        </div> 
+                        <div class="inputContainer textarea">
+
+                            <textarea id="comment" name="comment" placeholder="Üzenet" rows="10" cols="100">
+        
+                         </textarea>
+                        </div>
+        
+                        
+                        <div class="inputContainer submit">
+                            <input type="submit" name="submit" id="submit" value="submit">
+                        </div>
+        
+                        
+                        
+                    </form>
+                </div>
+            </article>
+        </section>
+    </main>
+    <footer id="footer">
+        <nav id="footermenu">
+            <a href="index.html">Home</a>
+            <a href="works.html">Works</a>
+            <a href="gallery.html">Gallery</a>
+            <a href="about.html">About</a>
+            
+        </nav>
+        <span id="upArrow">
+           <a href="#pageTitle"><i class="fas fa-arrow-up"></i></a> 
+        </span>
+    </footer>
 </body>
 </html>

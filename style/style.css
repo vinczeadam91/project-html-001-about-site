@@ -33,6 +33,20 @@
     box-shadow: 10px 10px 30px #000;
 }
 
+.projects{
+    width: 100%;
+}
+
+.projects.pictureWrapper{
+    display: block;
+    width: 100%;
+}
+
+.projects.descWrapper{
+    display: block;
+    width: 100%;
+}
+
 }
 
 
