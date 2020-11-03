@@ -62,8 +62,13 @@
     width: 100vw;
 }
 
-.form #formContainer, .form #formContainer .inputContainer {
-width: 100vw;
+.form #formContainer {
+width: 90vw;
+
+}
+.form #formContainer .inputContainer input{
+    width:90%;
+    margin-left: 15px;
 }
 }
 
@@ -131,7 +136,7 @@ nav a:hover{
 }
 
 #header h1{
-    text-align: center;
+    text-align: left;
     margin-top: 60px;
     padding: 10px;
 }
@@ -233,7 +238,7 @@ main .munkaim p{
     text-align: center;
     background-color: burlywood;
     padding: 15px;
-    margin-top: 20px;
+    margin: 20px 5px 20px 5px;
     line-height: 1.9rem;
 }
 
@@ -248,7 +253,7 @@ main .munkaim p{
 #formContainer {
     width: 60%;
     height: auto;
-    margin: 10px auto;
+    margin: 5px auto;
     background-color: rgb(27, 3, 34);
     opacity: 0.9;
     font-size: 1.5rem;
@@ -269,7 +274,7 @@ main .munkaim p{
     font-size: inherit;
     display: block;
     width: 90%;
-    margin: 15px 10px;
+    margin: 15px 5px;
     padding: 10px 10px;
 }
 
